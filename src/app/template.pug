@@ -1,0 +1,149 @@
+#app
+    section.header
+        .header__logo
+            img.header__logo__img(src="../assets/Storage.png" alt="storage")
+            .header__logo__text Конфигуратор <br> серверного оборудования
+        .header__wrap
+            .header__partners
+                .header__partners__HP
+                .header__partners__DELL
+            .header__search
+                input.header__search__input(type="search")
+                button.header__search__button
+                    img(src="../assets/search.png" alt="search")
+
+    section.content
+        article.content__configuration
+            .content__configuration__title
+                h2 Выбранная конфигурация
+                a
+                    img(src="../assets/backarrow.png" alt="back")
+                    p Вернуться назад
+            .content__configuration__container
+                .content__configuration__item
+                    img(src="../assets/server.png" alt="server")
+                    .content__configuration__item__specs
+                        h3 Сервер HP ProLiant DL360 Gen10
+                        a — HPE Proliant DL380 Gen10 Quickspecs
+                        a — Технические данные
+                        a — Гарантийные обязательства
+                        a — Описание платформы
+                .content__configuration__info
+                    h3 Предустановленная конфигурация
+                    p — LxIntel&reg; Xeon-Gold 5118
+                    p — Lx32GB Dual Rank x4 DDR2-2666
+                    p — LxIntel&reg; Xeon-Gold 5118
+                    p — Lx32GB Dual Rank x4 DDR2-2666
+                    p — LxIntel&reg; Xeon-Gold 5118
+                    a Показать весь список
+
+        article.content__configure
+            .content__configure__title
+                h2 Конфигурирование
+                button
+                    img(src="../assets/save.png" alt="save")
+                    p Сохранить конфигурацию
+            .content__configure__container
+                .content__configure__rig
+                    .content__configure__category
+                        .content__configure__type Процессор
+                        .content__configure__wrap
+                            .content__configure__head
+                                .content__configure__name Intel&reg; Xeon-Gold 5118 (2,3 Ghz/12-core/105w)
+                                .content__configure__add
+                                    span +
+                                    p Добавить
+                    .content__configure__category
+                        .content__configure__type Память
+                        .content__configure__wrap
+                            .content__configure__head
+                                .content__configure__name 32GB Dual Rank x4 DDR4-2666 GAS-19-19 Registre
+                                .content__configure__add
+                                    span +
+                                    p Добавить
+                            .content__configure__body
+                                .content__configure__more Схема расположения по слотам
+                                .content__configure__merch
+                                    select.name
+                                        option 32GB Dual Rank x4 DDR4-2666 GAS-19-19 Registre
+                                            option 32GB Dual Rank x4 DDR4-2666 GAS-19-19 Registre
+                                    select.count
+                                        option 1 шт.
+                                        option 150 шт.
+                                    img.trash(src="../assets/trash.png" alt="delete")
+                                .content__configure__merch
+                                    select.name
+                                        option 32GB Dual Rank x4 DDR4-2666 GAS-19-19 Registre
+                                        option 32GB Dual Rank x4 DDR4-2666 GAS-19-19 Registre
+                                    select.count
+                                        option 1 шт.
+                                        option 150 шт.
+                                    img.trash(src="../assets/trash.png" alt="delete")
+                    .content__configure__category
+                        .content__configure__type RAID Контроллер
+                        .content__configure__wrap
+                            .content__configure__head
+                                .content__configure__name E-208i-a SR Gen10 Lh/No Cache/12 GB/2
+                                .content__configure__add
+                                    span +
+                                    p Добавить
+                            .content__configure__body
+                                .content__configure__more Схема расположения по слотам
+                                .content__configure__merch
+                                    select.type
+                                        option SSD
+                                        option SSD
+                                    select.name2
+                                        option Intel s4600
+                                        option Intel s4600
+                                    select.count
+                                        option 1 шт.
+                                        option 150 шт.
+                                    img.trash(src="../assets/trash.png" alt="delete")
+                                .content__configure__merch
+                                    select.type
+                                        option SSD
+                                        option SSD
+                                    select.name2
+                                        option Intel s4600
+                                        option Intel s4600
+                                    select.count
+                                        option 1 шт.
+                                        option 150 шт.
+                                    img.trash(src="../assets/trash.png" alt="delete")
+                .content__configure__total
+                    .content__configure__options
+                        h2 Добавленные опции
+                        .content__configure__option
+                            p LxIntel&reg; Xeon-Gold 5118
+                            img(src="../assets/trash.png" alt="delete")
+                        .content__configure__option
+                            p Lx32GB Dual Rank x4 DDR2-2666
+                            img(src="../assets/trash.png" alt="delete")
+                    .content__configure__cost
+                        .content__configure__cost__left
+                            p.price 790 000 руб.
+                            a
+                                img(src="../assets/chasiki.png" alt="time")
+                                p Срок поставки: 3 дня
+                        .content__configure__cost__right
+                            button Оформить заказ
+                            a Помощь с выбором
+                    .content__configure__support
+                        p Если у вас возникли сложности с подбором оборудования, Вы можете позвонить в наш call-центр или задать вопрос специалисту
+                        .content__configure__call
+                            a.phone
+                                img(src="../assets/phone.png" alt="phone")
+                                p + 7(495) 31 88 33
+                            a.question
+                                img(src="../assets/huh.png" alt="phone")
+                                p Задать вопрос специалисту
+    section.footer
+        p &copy;Конфигуратор серверного оборудования, 2019
+        .footer__contact
+            a.question
+                img(src="../assets/huh.png" alt="phone")
+                p Задать вопрос специалисту
+            a.phone
+                img(src="../assets/phone.png" alt="phone")
+                p + 7(495) 31 88 33
