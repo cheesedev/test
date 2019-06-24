@@ -12,6 +12,18 @@
                 button.header__search__button
                     img(src="../assets/search.png" alt="search")
 
+        .header__mobile
+            .header__mobile__wrap
+                .header__mobile__logo
+                    img.header__mobile__img(src="../assets/Storage.png" alt="storage")
+                    .header__mobile__logo__text Конфигуратор <br> серверного оборудования
+                .header__search
+                    input.header__search__input(type="search")
+                    button.header__search__button
+                        img(src="../assets/search.png" alt="search")
+            .header__partners
+                .header__partners__HP
+                .header__partners__DELL
     section.content
         article.content__configuration
             .content__configuration__title
@@ -30,11 +42,12 @@
                         a — Описание платформы
                 .content__configuration__info
                     h3 Предустановленная конфигурация
-                    p — LxIntel&reg; Xeon-Gold 5118
-                    p — Lx32GB Dual Rank x4 DDR2-2666
-                    p — LxIntel&reg; Xeon-Gold 5118
-                    p — Lx32GB Dual Rank x4 DDR2-2666
-                    p — LxIntel&reg; Xeon-Gold 5118
+                    .pcontainer
+                        p — LxIntel&reg; Xeon-Gold 5118
+                        p — Lx32GB Dual Rank x4 DDR2-2666
+                        p — LxIntel&reg; Xeon-Gold 5118
+                        p — Lx32GB Dual Rank x4 DDR2-2666
+                        p — LxIntel&reg; Xeon-Gold 5118
                     a Показать весь список
 
         article.content__configure
@@ -114,12 +127,13 @@
                 .content__configure__total
                     .content__configure__options
                         h2 Добавленные опции
-                        .content__configure__option
-                            p LxIntel&reg; Xeon-Gold 5118
-                            img(src="../assets/trash.png" alt="delete")
-                        .content__configure__option
-                            p Lx32GB Dual Rank x4 DDR2-2666
-                            img(src="../assets/trash.png" alt="delete")
+                        .content__configure__wrap
+                            .content__configure__option
+                                p LxIntel&reg; Xeon-Gold 5118
+                                img(src="../assets/trash.png" alt="delete")
+                            .content__configure__option
+                                p Lx32GB Dual Rank x4 DDR2-2666
+                                img(src="../assets/trash.png" alt="delete")
                     .content__configure__cost
                         .content__configure__cost__left
                             p.price 790 000 руб.

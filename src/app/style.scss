@@ -11,7 +11,7 @@
 .header {
   width: 100%;
   height: 131px;
-  padding: 0 222px;
+  padding: 0 11.5vw;
   display: flex;
   box-sizing: border-box;
   display: flex;
@@ -24,7 +24,7 @@
     align-items: center;
   }
   &__search {
-    width: 565px;
+    width: 29.4vw;
     height: 55px;
     display: flex;
     align-items: center;
@@ -66,7 +66,7 @@
     }
   }
   &__partners {
-    width: 320px;
+    width: 16.6vw;
     height: 55px;
     display: flex;
     align-items: center;
@@ -93,11 +93,14 @@
       background-position: center center;
     }
   }
+  &__mobile {
+    display: none;
+  }
 }
 .content {
   width: 100%;
   min-height: 100%;
-  padding: 0 222px;
+  padding: 0 11.5vw;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -146,7 +149,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 61px 60px;
+      padding: 5.6vh 3.1vw;
       box-sizing: border-box;
       border-right: solid 1px #dadada;
       &__specs {
@@ -157,6 +160,7 @@
         align-items: flex-start;
         text-align: left;
         justify-content: flex-start;
+        padding-left: 30px;
         h3 {
           font-size: 16px;
           font-weight: bold;
@@ -183,7 +187,7 @@
       align-items: flex-start;
       flex-direction: column;
       justify-content: flex-start;
-      padding: 62px 63px;
+      padding: 5.6vh 3.1vw;
       box-sizing: border-box;
       h3 {
         margin-top: 0;
@@ -192,7 +196,7 @@
         margin-bottom: 33px;
         margin-top: 0;
       }
-      p {
+      .pcontainer p {
         margin-top: 0;
         font-size: 14px;
         margin-bottom: 10px;
@@ -253,7 +257,7 @@
       min-height: 100%;
       background: #fff;
       box-sizing: border-box;
-      padding: 37px 72px;
+      padding: 3.4vh 3.75vw;
       border-right: solid 1px #dadada;
       display: flex;
       align-items: center;
@@ -263,7 +267,7 @@
       width: 42.2%;
       height: 100%;
       background: #fff;
-      padding: 70px 66px;
+      padding: 6.4vh 3.4vw;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -291,8 +295,7 @@
     &__type {
       font-size: 14px;
       font-weight: bold;
-      margin-right: 39px;
-      width: 17.4%;
+      min-width: 6vw;
       min-height: 100%;
       //padding-top: 25px;
     }
@@ -336,47 +339,49 @@
       height: 50px;
       display: flex;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: space-between;
       margin-bottom: 12px;
       .name {
-        width: 355px;
+        width: 18.5vw;
         height: 40px;
         border: solid 1px #e1e1e1;
         background-color: #ffffff;
-        margin-right: 28px;
       }
       .name2 {
-        width: 230px;
+        width: 12vw;
         height: 40px;
         border: solid 1px #e1e1e1;
         background-color: #ffffff;
-        margin-right: 26px;
       }
       .type {
-        width: 95px;
+        width: 5vw;
         height: 40px;
         border: solid 1px #e1e1e1;
         background-color: #ffffff;
-        margin-right: 29px;
       }
       .count {
-        width: 105px;
+        width: 5.4vw;
         height: 40px;
         border: solid 1px #e1e1e1;
         background-color: #ffffff;
-        margin-right: 26px;
       }
       .trash {
         height: 17px;
         width: 15px;
       }
     }
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
     &__options {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       width: 100%;
-      height: 159px;
+      min-height: 159px;
       border-bottom: solid 1px #dadada;
       h2 {
         font-size: 16px;
@@ -402,18 +407,20 @@
     &__cost {
       display: flex;
       width: 100%;
-      min-height: 110px;
+      min-height: 12.5vh;
       border-bottom: solid 1px #dadada;
+      align-items: center;
       &__left {
-        width: 60%;
+        width: 54%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
         .price {
-          font-size: 32px;
+          font-size: calc(28px + (32 - 28) * ((100vw - 300px) / (1920 - 300)));
           font-weight: bold;
           margin: 0;
+          margin-bottom: 1vh;
         }
         a {
           display: flex;
@@ -425,6 +432,7 @@
           }
           p {
             font-size: 14px;
+            margin: 0;
           }
         }
       }
@@ -433,14 +441,15 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        width: 40%;
+        width: 46%;
         button {
-          width: 225px;
-          height: 45px;
+          width: 11.7vw;
+          height: 4vh;
           border-radius: 22.5px;
           border: solid 1px #0077c1;
           background-color: #0077c1;
           color: #fff;
+          margin-bottom: 1vh;
         }
         a {
           color: #0077c1;
@@ -491,7 +500,7 @@
 .footer {
   width: 100%;
   height: 131px;
-  padding: 0 222px;
+  padding: 0 11.5vw;
   display: flex;
   box-sizing: border-box;
   background: #fff;
@@ -527,4 +536,756 @@
       }
     }
   }
+}
+
+.pcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1500px) {
+  .content__configure__cost__left .price {
+    font-size: 24px;
+  }
+  .content__configuration__item img {
+    width: 214px;
+    height: 160px;
+  }
+
+}
+
+@media screen and (max-width: 1260px){
+
+  .content__configure__merch .name {
+    width: 21.5vw;
+    height: 40px;
+    border: solid 1px #e1e1e1;
+    background-color: #ffffff;
+  }
+
+  .content__configure__merch .name2 {
+    width: 16vw;
+    height: 40px;
+    border: solid 1px #e1e1e1;
+    background-color: #ffffff;
+  }
+
+  .content__configure__cost__left a p {
+    font-size: 11px;
+    margin: 0;
+  }
+
+  .content__configuration__info > .pcontainer p {
+    margin-top: 0;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .content__configuration__item__specs a {
+    color: #0077c1;
+    font-size: 10px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+  }
+  .content__configuration__item__specs h3 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 33px;
+    margin-top: 0;
+  }
+
+  .content__configuration__info h3 {
+    margin-top: 0;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 33px;
+  }
+
+  .content__configuration__info a {
+    color: #0077c1;
+    font-size: 9px;
+    margin-top: 5px;
+    border-bottom: dotted 1px #0077c1;
+  }
+
+  .content__configure__type {
+    font-size: 11px;
+    font-weight: bold;
+    min-width: 6vw;
+    min-height: 100%;
+  }
+
+  .content__configure__name {
+    font-size: 10px;
+    width: 77.4%;
+  }
+
+  .content__configure__call .phone p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .content__configure__cost__left .price {
+    font-size: 20px;
+  }
+
+  .content__configure__support p {
+    font-size: 9px;
+  }
+
+  .content__configure__option p {
+    font-size: 11px;
+    margin-bottom: 15px;
+    margin-right: 13px;
+  }
+
+  .content__configure__add span {
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    background: #0077c1;
+    text-align: center;
+    border-radius: 27px;
+    line-height: 1;
+    margin-right: 5px;
+  }
+
+  .content__configure__add p {
+    margin: 0;
+    color: #0077c1;
+    font-size: 12px;
+    border-bottom: dotted 1px #0077c1;
+  }
+
+  .footer__contact .phone p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .content__configure__cost__right button {
+    width: 10.7vw;
+    height: 3vh;
+    border-radius: 22.5px;
+    border: solid 1px #0077c1;
+    background-color: #0077c1;
+    color: #fff;
+    margin-bottom: 0.3vh;
+    font-size: 8px;
+  }
+
+  select {
+    height: 26px !important;
+  }
+
+  .content__configure__option img {
+    height: 14px;
+    width: 12px;
+  }
+
+  .content__configure__merch .trash {
+    height: 14px;
+    width: 12px;
+  }
+
+  .header__logo {
+    width: 197px;
+  }
+
+  .header__search {
+    width: 40vw;
+  }
+
+  .header__search__input {
+    width: 100%;
+    height: 55px;
+    border-radius: 27.5px 0 0 27.5px;
+    border: solid 1px #f6f6f6;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0.6px 0.8px 25px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0.6px 0.8px 25px 0 rgba(0, 0, 0, 0.07);
+    margin-left: 26px;
+  }
+
+  .header__logo__text {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+}
+
+@media screen and (max-width: 1124px) {
+  .content__configuration__item img {
+    width: 190px;
+    height: 136px;
+  }
+
+  .content__configuration__item__specs a {
+    color: #0077c1;
+    font-size: 7px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1042px) {
+  .content__configure__cost__right a {
+    color: #0077c1;
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 1196px) {
+  .content__configure__type {
+    font-size: 8px;
+    font-weight: bold;
+    min-width: 6vw;
+    width: 6vw;
+    min-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+
+}
+
+@media screen and (max-width: 1025px) {
+
+  .content__configure__merch .name2 {
+    width: 20vw;
+    height: 40px;
+    border: solid 1px #e1e1e1;
+    background-color: #ffffff;
+  }
+
+  .content__configure__merch .name {
+    width: 26.5vw;
+    height: 40px;
+    border: solid 1px #e1e1e1;
+    background-color: #ffffff;
+  }
+
+  .content {
+    padding: 0 6.5vw;
+  }
+
+  .header {
+    padding: 0 6.5vw;
+  }
+
+  .footer {
+    padding: 0 6.5vw;
+  }
+
+  .content__configure__more {
+    color: #0077c1;
+    font-size: 9px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 905px){
+  .content__configure__support {
+    background-size: 65px;
+  }
+
+  .footer__contact .phone img {
+    margin-right: 10px;
+    width: 12px;
+  }
+
+  .footer__contact .phone p {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .content__configure__call .phone img {
+    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .content__configure__call .phone p {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .footer p {
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .footer__contact .question img {
+    margin-right: 10px;
+    width: 18px;
+  }
+
+  .content__configure__call .question img {
+    margin-right: 10px;
+    width: 18px;
+  }
+
+  .footer__contact .question {
+    font-size: 14px;
+    color: #0077c1;
+    margin-right: 23px;
+  }
+}
+
+@media screen and (max-width: 799px){
+  .content__configure__cost__left .price {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 878px) {
+  .content__configure__cost__left a p {
+    font-size: 9px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__search__input {
+    display: none;
+  }
+
+  .header__partners {
+    width: 33.6vw;
+  }
+
+  .header__search {
+    width: 11vw;
+  }
+
+  .header__logo {
+    width: 44%;
+  }
+  .header__wrap {
+    width: 56%;
+    justify-content: space-between;
+  }
+  
+  .header__search__button {
+    width: 55px;
+    height: 55px;
+    background-color: #0077c1;
+    border-radius: 27.5px;
+  }
+  .content {
+    padding: 0;
+    background: #fff;
+    box-shadow: 5.6px 8.3px 68px 0 rgba(0, 0, 0, 0.1);
+  }
+  .header {
+    padding: 0;
+    box-shadow: 5.6px 8.3px 68px 0 rgba(0, 0, 0, 0.1);
+  }
+  .footer {
+    padding: 0;
+    box-shadow: 5.6px 8.3px 68px 0 rgba(0, 0, 0, 0.1);
+    flex-direction: column-reverse;
+    height: 83px;
+  }
+
+  .content__configuration__container {
+    flex-direction: column;
+    height: 630px;
+  }
+
+  .content__configuration__item {
+    padding: 0;
+    border-right: none;
+    height: 339px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .content__configuration__info h3 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 33px;
+    margin-left: 34px;
+  }
+
+  .content__configuration__info {
+    padding: 0;
+    height: 50%;
+    width: 100%;
+    background-size: 80px;
+  }
+
+  .content__configure__title button {
+    margin-bottom: 0;
+  }
+
+  .content__configure__container {
+    flex-direction: column;
+  }
+
+  .content__configure__type {
+    width: 34vw;
+    font-size: 14px;
+  }
+
+  .content__configure__rig {
+    width: 100%;
+  }
+
+  .content__configure__merch .name {
+    width: 49.5vw;
+    height: 40px !important;
+  }
+
+  .content__configure__merch .count {
+    width: 10.4vw;
+    height: 40px !important;
+  }
+
+  .content__configure__merch .type {
+    width: 10.4vw;
+    height: 40px !important;
+  }
+
+  .content__configure__merch .name2 {
+    width: 36vw;
+    height: 40px !important;
+  }
+
+  .content__configure {
+    min-height: 767px;
+    height: auto;
+  }
+
+  .content__configuration__info > .pcontainer p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .content__configuration__item__specs a {
+    font-size: 14px;
+  }
+
+  .content__configuration__item__specs {
+    width: 40.8vw;
+  }
+
+  .content__configuration__item__specs h3 {
+    font-size: 16px;
+  }
+
+  .content__configuration__item img {
+    width: 300px;
+    height: 240px;
+  }
+
+  .pcontainer {
+    height: 80px;
+    flex-wrap: wrap;
+    padding: 0 34px;
+  }
+
+  .content__configuration__info a {
+    margin-left: 34px;
+  }
+
+  .content__configure__total {
+    width: 100%;
+    padding: 1.4vh 3.4vw
+  }
+
+  .content__configure__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .content__configure__cost__left .price {
+    font-size: 32px;
+  }
+
+  .content__configure__option p {
+    font-size: 14px;
+  }
+
+  .content__configure__options {
+    min-height: 120px;
+  }
+
+  .content__configure__cost__right button {
+    width: 35.7vw;
+    height: 4vh;
+    border-radius: 22.5px;
+    border: solid 1px #0077c1;
+    background-color: #0077c1;
+    color: #fff;
+    margin-bottom: 0.3vh;
+    font-size: 14px;
+  }
+
+  .content__configure__cost__right a {
+    font-size: 12px;
+  }
+
+  .content__configure__cost__left a p{
+    font-size: 14px;
+  }
+
+  .content__configure__call .phone p {
+    font-size: 20px;
+  }
+
+  .content__configure__call .phone img {
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+  }
+
+  .content__configure__support p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .content__configure__call {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .footer__contact .phone img {
+    width: 17px;
+    height: 17px;
+  }
+
+  .footer__contact .phone p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .content__configure__call {
+    width: 100%;
+  }
+
+  .content__configuration__info > .pcontainer p {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .content__configuration__item__specs a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    height: 146px;
+    margin-bottom: 76px;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__wrap {
+    display: none;
+  }
+  .header__mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 130px;
+  }
+  .header__partners {
+    width: 97.6vw;
+    align-self: center;
+  }
+  .header__search__button {
+    width: 43px;
+    height: 43px;
+  }
+
+  .header__mobile__logo {
+    width: 220px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__text {
+      font-size: 11px !important;
+      font-weight: bold;
+    }
+  }
+  .header__mobile__img {
+    height: 39px;
+    width: 39px;
+    margin-right: 5px;
+  }
+  .header__mobile__wrap {
+    display: flex;
+    height: 77px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .content__configuration__item__specs {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .content__configure__merch .count {
+    width: 17.4vw;
+    height: 40px !important;
+    margin-top: 5px;
+    margin-right: 20px;
+  }
+
+  .content__configure__name {
+    font-size: 12px;
+    width: 77.4%;
+  }
+
+  .content__configure__merch .type {
+    width: 30.4vw;
+    height: 40px !important;
+    margin-right: 10vw;
+  }
+
+  .content__configure__merch .name2 {
+    width: 51vw;
+    height: 40px !important;
+  }
+
+  .content__configure__wrap {
+    flex-direction: column;
+  }
+  .content__configuration__info {
+    padding: 0;
+    height: 50%;
+    width: 100%;
+    background-size: 80px;
+    margin-bottom: 20px;
+  }
+  .content__configure__cost {
+    flex-direction: column;
+  }
+  .content__configure__cost__left {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .content__configure__cost__right {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .content__configure__cost__right button {
+    width: 100%;
+    height: 7vh;
+    border-radius: 22.5px;
+    border: solid 1px #0077c1;
+    background-color: #0077c1;
+    color: #fff;
+    margin-bottom: 0.3vh;
+    font-size: 18px;
+  }
+
+  .content__configure__call {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .content__configure__cost__right a {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .content__configure__call a {
+    margin-bottom: 15px;
+  }
+
+  .content__configuration__item {
+    flex-direction: column;
+    min-height: 350px;
+    height: auto;
+  }
+
+  .content__configuration {
+    min-height: 506px;
+    height: auto;
+  }
+
+  .content__configuration__container {
+    min-height: 577px;
+    height: auto;
+  }
+
+  .content__configure__title button {
+    width: 38.4vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .content__configure__title button p {
+    font-size: 9px;
+    color: #0077c1;
+    text-align: initial;
+    margin: 0 0 0 10px;
+  }
+
+  .header__search {
+    width: 18vw;
+  }
+
+  .content__configure__title button img {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+  }
+
+  .content__configure__category {
+    flex-direction: column;
+  }
+  .content__configure__type {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .content__configure__head {
+    flex-direction: column;
+  }
+
+  .content__configure__merch .name {
+    width: 100%;
+  }
+
+  .content__configure__merch {
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+  }
+
+  .content__configure__title h2 {
+    font-size: 17px;
+  }
+
+  .pcontainer {
+    min-height: 80px;
+    -ms-flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    padding: 0 34px;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 13px;
+  }
+
 }
